@@ -1,6 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="home">
+  <img id="logo" alt="Mon logo" src="./assets/logo.png">
+  <HelloWorld msg="Bienvenue sur ma chaine Youtube"/>
+  </div> 
 </template>
 
 <script>
@@ -21,6 +23,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
+  background: rgb(85, 230, 210);
+}
+#logo {
+  width: 280px;
 }
 </style>
