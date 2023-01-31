@@ -13,7 +13,7 @@
       </div>
       <span v-else>💩</span>
     </div>
-    <span>@copyright-Bernardin Milhet</span>
+    <span>@copyright-Bernardin Milhet 2023</span>
   </div>
 </template>
 
