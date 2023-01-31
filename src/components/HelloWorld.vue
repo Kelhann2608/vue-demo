@@ -7,12 +7,13 @@
     <button v-on:click="subscribe()">S'abonner !</button>
     <div class="comment" v-for="(comment, index) in comments" v-bind:key="index">
       <h3>{{ comment.nom }}</h3>
-      <p>{{ comment.commentaire}}</p>
+      <p>{{ comment.commentaire }}</p>
       <div v-if="comment.note > 1">
         <span v-for="i in comment.note" v-bind:key="i">🍌</span>
-        </div>
-        <span v-else>💩</span>
+      </div>
+      <span v-else>💩</span>
     </div>
+    <span>@copyright-Bernardin Milhet</span>
   </div>
 </template>
 
@@ -29,11 +30,11 @@ export default {
         nom: 'Jean François',
         commentaire: "c'est trop cool !",
         note: 4,
-      },{
+      }, {
         nom: 'Amandine',
         commentaire: "J'adore ce que tu fais, continue !",
         note: 5,
-      },{
+      }, {
         nom: 'Marc Aigri',
         commentaire: "c'est du caca !",
         note: 1,
@@ -54,17 +55,21 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #42b983;
 }
+
 p {
   font-size: 22px;
 }
